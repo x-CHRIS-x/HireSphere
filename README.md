@@ -1,16 +1,44 @@
-# React + Vite
+# HireSphere
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HireSphere is a web-based job portal and recruitment decision support system. It helps organizations streamline their hiring process and uses a weighted scoring algorithm to evaluate and rank applicants based on multiple criteria.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 18
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Supabase (Backend/Database)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prerequisites
+- Node.js v18+
+- npm
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repo
+   git clone https://github.com/x-CHRIS-x/HireSphere.git
 
-## Expanding the ESLint configuration
+2. Go into the project folder
+   cd HireSphere
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Install dependencies
+   npm install
+
+4. Set up environment variables
+   Copy .env.example to .env and fill in your Supabase credentials.
+
+5. Run the dev server
+   npm run dev
+
+## Project Structure
+- `src/components/` — Shared UI components (Navbar, Footer)
+- `src/context/` — Global state management (Auth)
+- `src/data/` — Static/placeholder data for the prototype
+- `src/pages/` — Main page components separated by role (admin, applicant, encoder)
+- `src/utils/` — Helper functions including the weighted scoring logic
+
+## Group Members
+- Ledama, John Chris
+- Lim, Charles Selwyn
+- Luchavez, Marc Jorem
+- Crispo, Gian
