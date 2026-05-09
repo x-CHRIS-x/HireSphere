@@ -1,66 +1,16 @@
-# HireSphere
+# React + Vite
 
-A web-based job portal and recruitment decision support system. HR users can post job listings, applicants can submit applications, and the system evaluates and ranks candidates using a Weighted Scoring Algorithm with AI-assisted preliminary evaluation.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tech Stack
+Currently, two official plugins are available:
 
-| Technology | Role |
-|---|---|
-| JavaScript | Client-side logic |
-| React 18 | Front-end framework |
-| Vite | Build tool and dev server |
-| Material Tailwind CSS | UI styling |
-| React Router DOM | Client-side routing |
-| Supabase | Backend-as-a-Service (PostgreSQL, auth, real-time, APIs) |
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Prerequisites
+## React Compiler
 
-- Node.js v18 or higher
-- npm or yarn
-- A Supabase project (for database and authentication)
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Installation
+## Expanding the ESLint configuration
 
-1. Clone the repo
-   ```
-   git clone https://github.com/x-CHRIS-x/HireSphere.git
-   ```
-
-2. Go into the project folder
-   ```
-   cd HireSphere
-   ```
-
-3. Install dependencies
-   ```
-   npm install
-   ```
-
-4. Set up environment variables
-   ```
-   Copy .env.example to .env and fill in your Supabase project URL and anon key.
-   ```
-
-5. Run the dev server
-   ```
-   npm run dev
-   ```
-
-## Project Structure
-
-```
-HireSphere/
-├── src/                  — source code (components, pages, utils)
-├── public/               — static assets
-├── .env.example          — template for env variables
-├── .gitignore            — files excluded from version control
-├── README.md             — this file
-└── package.json          — dependencies and scripts
-```
-
-## Group Members
-
-- John Chris Ledama
-- Charles Selwyn Lim
-- Marc Jorem Luchavez
-- Gian Crispo
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

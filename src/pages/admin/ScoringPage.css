@@ -1,0 +1,139 @@
+.scoring-page {
+  padding: 2rem 0 4rem;
+  min-height: 70vh;
+}
+
+.weights-panel {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: var(--radius-sm);
+}
+
+.weights-panel h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.weights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.weight-control {
+  padding: 0.85rem 1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+}
+
+.weight-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.weight-label-row label {
+  font-size: 0.85rem;
+  font-weight: 550;
+}
+
+.weight-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.weight-slider {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--color-border);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.weight-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.weight-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.weights-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weights-total {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+}
+
+.weights-total.valid {
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.weights-total.invalid {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.btn-calculate {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 550;
+  color: white;
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-calculate:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.scoring-table-section {
+  margin-top: 0.5rem;
+}
+
+.scoring-table-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.td-empty {
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .weights-grid {
+    grid-template-columns: 1fr;
+  }
+}

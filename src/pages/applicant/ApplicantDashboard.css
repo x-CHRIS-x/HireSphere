@@ -1,0 +1,27 @@
+.applicant-dash {
+  padding: 2rem 0 4rem;
+  min-height: 70vh;
+}
+
+.dash-section {
+  margin-top: 0.5rem;
+}
+
+.dash-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: white;
+  border-radius: var(--radius-sm);
+}
+
+.empty-state p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
